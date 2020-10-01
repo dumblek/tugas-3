@@ -8,7 +8,7 @@ use Auth;
 class RoleController extends Controller
 {
     public function route_1(){
-        return "berhasil masuk route 1";
+         return "berhasil masuk route 1";
     }
 
     public function route_2(){
