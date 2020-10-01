@@ -15,8 +15,8 @@ class CreateDataPinjamanTable extends Migration
     {
         Schema::create('data_pinjaman', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('mahasiswa_id');
-            $table->unsignedInteger('buku_id');
+            $table->unsignedBigInteger('mahasiswa_id');
+            $table->unsignedBigInteger('buku_id');
             $table->datetime('tanggal_peminjaman');
             $table->datetime('tanggal_akhir_peminjaman');
             $table->datetime('tanggal_pengembalian');

@@ -21,7 +21,7 @@ class CreateMahasiswaTable extends Migration
             $table->string('jurusan');
             $table->string('no_hp');
             $table->string('no_wa');
-            $table->unsignedInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
