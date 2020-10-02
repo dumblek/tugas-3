@@ -6,3 +6,8 @@ Route::namespace('Auth')->group(function(){
     Route::post('logout', 'LogoutController');
 });
 
+Route::middleware('auth:api')->group(function(){
+    Route::post('mahasiswa', 'MahasiswaController@store');
+});
+
+Route::get('mahasiswa/{mahasiswa}', 'MahasiswaController@show');
